@@ -80,5 +80,23 @@
   </dependencies>
   <build>
     <finalName>springmaven</finalName>
+      <plugins>    
+        <plugin>    
+            <groupId>org.apache.maven.plugins</groupId>    
+            <artifactId>maven-compiler-plugin</artifactId>    
+            <configuration>    
+       		  <encoding>utf-8</encoding>
+       		  <!-- JDK版本 -->
+              <source>1.8</source>    
+              <target>1.8</target>    
+            </configuration>    
+        </plugin>    
+       </plugins>    
   </build>
+  <!-- 和上边的UTF-8一起使用，确保编码是UTF-8 -->
+  <properties>
+         <project.build.sourceEncoding>
+             UTF-8
+         </project.build.sourceEncoding>
+  </properties>
 </project>
